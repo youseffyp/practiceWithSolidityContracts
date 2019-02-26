@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract Inbox {
 
@@ -13,5 +13,8 @@ contract Inbox {
 
         message = newMessage;
     }
-
+    
+    function getMessage () public view returns (string) {
+        return message;
+    }
 }
